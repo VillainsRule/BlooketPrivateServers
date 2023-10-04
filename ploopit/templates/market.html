@@ -1,0 +1,574 @@
+<head>
+  <script src="https://kit.fontawesome.com/fff095bf0b.js" crossorigin="anonymous"></script>
+  <title>{{user}} Stats</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon-16x16.png">
+  <link rel="manifest" href="../static/images/site.webmanifest">
+  <link rel="mask-icon" href="../static/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+        <script src="https://kit.fontawesome.com/fff095bf0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/misc.css" />
+    <link rel="stylesheet" href="../static/css/404.css" />
+          <script src="../static/scripts/stats.js" defer type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+    <script src="../static/scripts/game.js" defer type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+    <script src="../static/scripts/all.js" defer type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+    <script src="../static/scripts/jquery.js" type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+    <meta name="keywords"
+        content="ploopit, Ploopit, ploopit private server">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titan+One">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans&fam">
+        <meta name="google-site-verification" content="GV05APRuFawzXQj3V55HcQ4XRfkZQ4_yqYPH4UbG3HA" />
+        <script src="../static/scripts/loading.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+        <style>
+               ol,
+ul {
+list-style: none;
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+/* Styles for larger screens */
+.container {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+/* Styles for smaller screens */
+
+.innercontainer {
+  width: 100%;
+}
+
+#horBar {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#horBar li {
+  width: auto;
+  margin: 5px;
+}
+
+
+ol,
+ul {
+list-style: none;
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+
+
+/* Styles for larger screens */
+.container {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+
+
+#horBar {
+  margin: 11px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#horBar li {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  color: rgb(3, 116, 116);
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+#horBar {
+  margin: 11px;
+width: 1000px;
+display: flex;
+justify-content: center;
+  flex-wrap: wrap;
+}
+
+#horBar li {
+  font-size: 22px;
+display: flex;
+align-items: center;
+color: rgb(3, 116, 116);
+width: 100px;
+float: left;
+ transform: translate(400px, -50%);
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+}
+
+.styles__inputContainer___t9pz0-ploopCase {
+  border-radius: 6px;
+  max-width: 330px;
+  width: 80%;
+  height: 45px;
+  margin: auto auto 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#horBar {
+margin: 11px;
+width: 1000px;
+display: flex;
+justify-content: center;
+}
+#horBar li {
+font-size: 22px;
+display: flex;
+align-items: center;
+color: rgb(3, 116, 116);
+width: 100px;
+float: left;
+ transform: translate(400px, -50%);
+}
+
+#horBar button {
+  font-family: 'Titan One', sans-serif;
+color: #006;
+text-decoration: none;
+padding: 4px;
+display: block;
+-webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#horBar a {
+--bg-size: 400%;
+--color-one: hsl(184, 100%, 33%);
+--color-two: hsl(165, 100%, 20%);
+font-size: 22px;
+font-family: 'Titan One', sans-serif;
+background: linear-gradient(
+              90deg,
+              var(--color-one),
+              var(--color-two),
+              var(--color-one)
+            ) 0 0 / var(--bg-size) 100%;
+color: transparent;
+background-clip: text;
+-webkit-background-clip: text;
+animation: move-bg 8s infinite linear;
+-webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.5s;
+  align-self: center;
+}
+#horBar a:hover {
+  background: -webkit-linear-gradient(#012277, #004599);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.button3D {
+background-color: #005281;
+background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 0.1) 50%, transparent 55%),-webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), transparent);
+border-radius: 6px;
+box-shadow: 0 0 0 1px #163772 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 4px 0 0      #333797,0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+color: white !important;
+display: block;
+font-family: "Titan One", sans-serif;
+font-size: 20px;
+height: 40px;
+letter-spacing: -1px;
+line-height: 50px;
+margin-bottom: 10px;
+cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-decoration: none;
+position: relative;
+align-self: center;
+text-align: center;
+text-decoration: none !important;
+-webkit-transition: all .2s linear;
+margin-left: 10px;
+width: 146px;
+}
+
+.button3D:active {
+background-color: #000783;
+top: 4px;
+box-shadow: 0 0 0 1px #004c76 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0      #333797,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.button3D:hover {
+background-color: #003656;
+position: relative;
+top: -5px;
+box-shadow: 0 0 0 1px #004048 inset,0 0 0 2px rgba(0, 47, 100, 0.15) inset,0 5px 0 0      #003757,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.ploopittext{
+  font-size: 40px;
+  font-family: Titan One, sans-serif;
+  text-decoration: none;
+  font-size: 42px;
+  background: -webkit-linear-gradient(#00ffd5, #0097c5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0px 1px 5px black);
+  margin-bottom: 20px;
+  margin: center;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.background{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(-90deg, rgb(6, 0, 92), rgb(0, 83, 128), rgb(0, 0, 40), rgb(0, 40, 108));
+  background-size: 400% 400%;
+  animation: animate 15s ease infinite;
+}
+
+.wavesgif{
+  position: absolute;
+background-size: cover;
+width: 100%;
+height: 85%;
+top: 50%;
+}
+@media (prefers-reduced-motion: no-preference) {
+#horBar a {
+  animation: move-bg 8s linear infinite;
+}
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
+}
+
+@keyframes animate {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.userinfocontainer{
+  position: relative;
+  display: block;
+justify-content: center;
+  font-size:28px;
+  color:#fff;
+  text-align:center;
+  line-height:49px;
+  padding:20px;
+  align-items: center;
+  font-family:'Titan One',sans-serif;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none
+}
+
+.Plooppfp{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100px;
+margin-bottom: 10px;
+  filter:drop-shadow(0 10px rgba(0,0,0,.2));
+  cursor:pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+}
+
+.banner{
+ display: block;
+margin-left: auto;
+margin-right: auto;
+width: 290px;
+height: 62px;
+margin-bottom: 10px;
+justify-content: center;
+  filter:drop-shadow(0 10px rgba(0,0,0,.2));
+  cursor:pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+}
+
+.headerbuttons{
+width: 40%;
+height: 15%;
+display: flex;
+overflow: hidden;
+margin-left: auto;
+margin-right: auto;
+font-family: 'Titan One', sans-serif;
+margin-bottom: 5px;
+}
+
+.header3Dbtn{
+background-color: #005281;
+background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 0.1) 50%, transparent 55%),-webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), transparent);
+border-radius: 6px;
+box-shadow: 0 0 0 1px #163772 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 4px 0 0      #333797,0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+color: rgb(255, 255, 255) ;
+display: block;
+font-family:  Nunito , sans-serif ;
+font-weight: 100;
+font-size: 15px;
+height: 40px;
+letter-spacing: -1px;
+line-height: 50px;
+font-weight: 200;
+margin-bottom: 10px;
+cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-decoration: none;
+position: relative;
+align-self: center;
+text-align: center;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+text-decoration: none !important;
+-webkit-transition: all .2s linear;
+margin-left: 10px;
+width: 146px;
+transition: 0.2s;
+}
+
+.header3Dbtn:active {
+background-color: #000783;
+top: 4px;
+box-shadow: 0 0 0 1px #004c76 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0      #333797,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.header3Dbtn:hover {
+background-color: #003656;
+position: relative;
+transform:translateY(-4px);
+transform: cubic-bezier(.3,.7,.4,1);
+box-shadow: 0 0 0 1px #004048 inset,0 0 0 2px rgba(0, 47, 100, 0.15) inset,0 5px 0 0      #003757,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+.statscontainer {
+width: 30%;
+height: auto;
+margin: auto;
+background-color: #ffffff;
+border-radius: 30px;
+filter:inset(0 10px rgba(0,0,0,.2));
+padding: 5%;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+  }
+#logoText{
+ font-family: titan one;
+ color: white;
+ font-size: 6vh;
+ text-shadow: 0 0 4vh #09001a;
+ text-decoration: none;
+ -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-decoration: none;
+  text-align: center;
+}
+#mainText{
+    font-family: nunito ;
+    color:white;
+    font-size: 4vh;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  bottom: 0%;
+}
+#mainText a {
+  color: white !important;
+  text-decoration: none;
+  -webkit-user-drag: none;
+}
+.sidebarLink{
+    font-family: 'Titan One';
+    padding: 1vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 6vh;
+    width: 29vh;
+    margin: .6vh 0;
+    cursor: pointer;
+    font-weight: normal;
+    text-decoration: none;
+    -webkit-user-drag: none;
+    transition: 0.5s;
+}
+.sidebarLink:hover,
+.sidebarLink:active
+ {
+  background-color: rgb(0, 145, 170);
+  color:rgb(0, 0, 0);
+}
+
+        </style>
+         <script src="../static/scripts/misc.js"></script>
+        <script>
+ $("document").ready(function(){
+      $("#hide").click(function() {
+        var isHidden = $(".navbar").is(":hidden");
+        if (isHidden) {
+          $('.navbar').slideDown();
+        } else {
+          $('.navbar').slideUp();
+        }
+      });        
+    });    
+$("document").ready(function(){
+    $("#show").click(function() {
+        var isShow = $(".navbar").is(":hidden");
+        if (isShow) {
+          $('.navbar').slideDown();
+        } else {
+          $('.navbar').slideUp();
+        }
+      });
+  });
+
+  $("document").ready(function(){
+    $("#news1").click(function() {
+        var isHidden2 = $(".newscontainer").is(":hidden");
+        if (isHidden2) {
+          $('.newscontainer').slideDown();
+        } else {
+          $('.newscontainer').slideUp();
+        }
+      });
+  });
+
+  $("document").ready(function(){
+    $("#closenews").click(function() {
+        var isHidden2 = $(".newscontainer").is(":hidden");
+        if (isHidden2) {
+          $('.newscontainer').slideDown("300");
+        } else {
+          $('.newscontainer').slideUp();
+        }
+      });
+  });
+  window.onload = Closeform()
+function Openform(){
+  //alert("INSIDE OPENFORM FUNCTION")
+  document.getElementById('buy').style.visibility = 'visible';
+};
+
+function codes1form(){
+  //alert("INSIDE OPENFORM FUNCTION")
+  document.getElementById('codes').style.visibility = 'hidden';
+  }
+  function codesform(){
+  //alert("INSIDE OPENFORM FUNCTION")
+  document.getElementById('codes').style.visibility = 'visible';
+};
+
+
+
+function Closeform() {
+  document.getElementById('buy').style.visibility = 'hidden';
+}
+
+function claimButton() {
+  var bubbles = 0;
+  document.getElementById("bubblestat").innerHTML = bubbles;
+  bubbles += 900; 
+  document.getElementById("bubblestat").innerHTML = bubbles;
+
+  if (bubbles > 9999999) {
+      bubbles = "banned";
+      document.getElementById("bubblestat").innerHTML = bubbles;
+  }
+}
+
+
+        </script>
+        <script>
+          window.onload = ploopimg()
+              function ploopimg() {
+var testimg = "../static/images/ploopit.svg"
+document.getElementById("imageploop").innerHTML = testimg;
+  }
+
+  function banner() {
+var banner = "https://cdn.discordapp.com/attachments/1116888171502895305/1125132764514103446/Default-banner_1.png"
+document.getElementById("banner").innerHTML = banner
+  }
+  </script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a id="logoText" href="../">Ploopit</a><br><br><br>
+      <div id="mainText">
+          <a class="menuItem" href="/stats">
+              <div class="sidebarLink menuText">Stats</div>
+          </a>
+          <a class="menuItem" href="/market">
+              <div class="sidebarLink menuText">Market</div>
+          </a>
+          <a class="menuItem" href="/blooks">
+              <div class="sidebarLink menuText">Blooks</div>
+          </a>
+     {% if session.role == "Admin" %}
+    <a class="menuItem" href="/admin">
+     <div class="sidebarLink menuText">Admin panel</div>
+     </a>
+     {% endif %}
+          <a class="menuItem">
+            <div class="sidebarLink menuText">Settings</div>
+          </a>
+      </div>
+  </div>
+</div>
+<div class="background">
+<div class="wavesgif" style="background-image: url('https://cdn.discordapp.com/attachments/1114574418568552602/1119443665903964190/wave.gif');">
+</div>
+
+</div>
+</div>
+</body>

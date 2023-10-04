@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/fff095bf0b.js" crossorigin="anonymous"></script>
+    <title>Ploopit Chat</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="../static/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon-16x16.png">
+    <link rel="manifest" href="../static/images/site.webmanifest">
+    <link rel="mask-icon" href="../static/images/safari-pinned-tab.svg" color="#5bbad5">
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+          <script src="https://kit.fontawesome.com/fff095bf0b.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="../static/css/misc.css" />
+      <link rel="stylesheet" href="../static/css/404.css" />
+            <script src="../static/scripts/stats.js" defer type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+      <script src="../static/scripts/game.js" defer type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+      <script src="../static/scripts/all.js" defer type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+      <script src="../static/scripts/jquery.js" type="a875bbfdd76718c9cb22f39a-text/java script"></script>
+      <meta name="keywords"
+          content="ploopit, Ploopit, ploopit private server">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titan+One">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans&fam">
+          <meta name="google-site-verification" content="GV05APRuFawzXQj3V55HcQ4XRfkZQ4_yqYPH4UbG3HA" />
+          <script src="../static/scripts/loading.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+    <style id="hiddenDiv">
+                         ol,
+ul {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* Styles for larger screens */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles for smaller screens */
+
+  .innercontainer {
+    width: 100%;
+  }
+
+  #horBar {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #horBar li {
+    width: auto;
+    margin: 5px;
+  }
+
+
+ol,
+ul {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Styles for larger screens */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+  #horBar {
+    margin: 11px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #horBar li {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    color: rgb(3, 116, 116);
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+@media screen and (max-width: 600px) {
+  #horBar {
+    margin: 11px;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #horBar li {
+    font-size: 22px;
+  display: flex;
+  align-items: center;
+  color: rgb(3, 116, 116);
+  width: 100px;
+  float: left;
+   transform: translate(400px, -50%);
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+
+.styles__inputContainer___t9pz0-ploopCase {
+    border-radius: 6px;
+    max-width: 330px;
+    width: 80%;
+    height: 45px;
+    margin: auto auto 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+#horBar {
+  margin: 11px;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+#horBar li {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  color: rgb(3, 116, 116);
+  width: 100px;
+  float: left;
+   transform: translate(400px, -50%);
+}
+
+#horBar button {
+    font-family: 'Titan One', sans-serif;
+  color: #006;
+  text-decoration: none;
+  padding: 4px;
+  display: block;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#horBar a {
+  --bg-size: 400%;
+  --color-one: hsl(184, 100%, 33%);
+  --color-two: hsl(165, 100%, 20%);
+  font-size: 22px;
+  font-family: 'Titan One', sans-serif;
+  background: linear-gradient(
+                90deg,
+                var(--color-one),
+                var(--color-two),
+                var(--color-one)
+              ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move-bg 8s infinite linear;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.5s;
+    align-self: center;
+}
+#horBar a:hover {
+    background: -webkit-linear-gradient(#012277, #004599);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button3D {
+ background-color: #005281;
+ background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 0.1) 50%, transparent 55%),-webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), transparent);
+ border-radius: 6px;
+ box-shadow: 0 0 0 1px #163772 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 4px 0 0      #333797,0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+ color: white !important;
+ display: block;
+ font-family: "Titan One", sans-serif;
+ font-size: 20px;
+ height: 40px;
+ letter-spacing: -1px;
+ line-height: 50px;
+ margin-bottom: 10px;
+ cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-decoration: none;
+ position: relative;
+ align-self: center;
+ text-align: center;
+ text-decoration: none !important;
+ -webkit-transition: all .2s linear;
+ margin-left: 10px;
+ width: 146px;
+ }
+ .ploopitText{
+    font-size: 40px;
+    font-family: Titan One, sans-serif;
+    text-decoration: none;
+    font-size: 42px;
+    background: -webkit-linear-gradient(#00ffd5, #0097c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 1px 5px black);
+    margin-bottom: 20px;
+    margin: center;
+    text-align: center;
+    transition: 0.5s;
+ }
+ .button3D:active {
+ background-color: #000783;
+ top: 4px;
+ box-shadow: 0 0 0 1px #004c76 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0      #333797,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
+ }
+
+ .button3D:hover {
+ background-color: #003656;
+ position: relative;
+ top: -5px;
+ box-shadow: 0 0 0 1px #004048 inset,0 0 0 2px rgba(0, 47, 100, 0.15) inset,0 5px 0 0      #003757,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+ }
+
+ .ploopittext{
+    font-size: 40px;
+    font-family: Titan One, sans-serif;
+    text-decoration: none;
+    font-size: 42px;
+    background: -webkit-linear-gradient(#00ffd5, #0097c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 1px 5px black);
+    margin-bottom: 20px;
+    margin: center;
+    text-align: center;
+    transition: 0.5s;
+ }
+
+ .background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(-90deg, rgb(6, 0, 92), rgb(0, 83, 128), rgb(0, 0, 40), rgb(0, 40, 108));
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+ }
+
+ .wavesgif{
+    position: absolute;
+background-size: cover;
+width: 100%;
+height: 85%;
+top: 50%;
+ }
+ @media (prefers-reduced-motion: no-preference) {
+ #horBar a {
+    animation: move-bg 8s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.chatinput{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 83%;
+    float: left;
+    color: black;
+    background-color: white;
+    margin-bottom: auto;
+}
+
+.sendbtn{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 58px;
+    width: 16.6%;
+    background-color: #00c9c9;
+ background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 0.1) 50%, transparent 55%),-webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), transparent);
+ border-radius: 6px;
+ box-shadow: 0 0 0 1px #167272 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 4px 0 0      #338897,0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+ color: white !important;
+ font-family: "Titan One", sans-serif;
+ font-size: 20px;
+ letter-spacing: -1px;
+ cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-decoration: none;
+ text-decoration: none !important;
+ -webkit-transition: all .3s linear;
+ border-color: 000;
+}
+
+.sendbtn:hover{
+    background-color: #0400ff;
+ transform:translateY(-8px);
+transform: cubic-bezier(.3,.7,.4,1);
+color: black !important;
+ box-shadow: 0 0 0 1px #020081 inset,0 0 0 2px rgba(0, 47, 100, 0.15) inset,0 5px 0 0      #000274,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+}
+.chatcontainer{
+  position: absolute;
+  padding-bottom: 50px;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+    font-size: 40px;
+    width: 100%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow-y: auto;
+}
+#chat-container p{
+    color: rgb(0, 255, 213);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+    font-family: 'Titan One';
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+#chat-container {
+    height: 500px;
+    overflow-y: auto;
+}
+
+#hiddenDiv {
+            display: none;
+        }
+
+#message-container {
+    margin-bottom: 10px;
+}
+    </style>
+    <script>
+           $("document").ready(function(){
+        $("#hide").click(function() {
+          var isHidden = $(".navbar").is(":hidden");
+          if (isHidden) {
+            $('.navbar').slideDown();
+          } else {
+            $('.navbar').slideUp();
+          }
+        });        
+      });    
+$("document").ready(function(){
+      $("#show").click(function() {
+          var isShow = $(".navbar").is(":hidden");
+          if (isShow) {
+            $('.navbar').slideDown();
+          } else {
+            $('.navbar').slideUp();
+          }
+        });
+    });
+    </script>
+</head>
+<body>
+      <div class="navbar">
+        <a id="logoText" href="../">Ploopit</a><br><br><br>
+        <div id="mainText">
+            <a class="menuItem" href="/stats">
+                <div class="sidebarLink menuText">Stats</div>
+            </a>
+            <a class="menuItem" href="/market">
+                <div class="sidebarLink menuText">Market</div>
+            </a>
+            <a class="menuItem" href="/Ploops">
+                <div class="sidebarLink menuText">Ploop Locker</div>
+            </a>
+            <a class="menuItem" href="/chat">
+              <div class="sidebarLink menuText">Chat</div>
+          </a>
+       {% if session.role == "Admin" %}
+      <a class="menuItem" href="/admin">
+       <div class="sidebarLink menuText">Admin panel</div>
+       </a>
+       {% endif %}
+            <a class="menuItem">
+              <div class="sidebarLink menuText">Settings</div>
+            </a>
+        </div>
+    </div>
+    </div>
+    <div class="background">
+      <div class="chatcontainer" id="chat-container"></div>
+      <div id="message-container"></div>
+      <input class="chatinput" type="text" id="message-input" placeholder="Type your message">
+      <button class="sendbtn" id="send-button" onclick="sendMessage()">Send</button>
+<script id="hiddenDiv">
+// Client-side JavaScript
+const chatContainer = document.getElementById('chat-container');
+const messageInput = document.getElementById('message-input');
+const sendButton = document.getElementById('send-button');
+
+// Function to display chat messages
+function displayMessage(username, message) {
+    const p = document.createElement('p');
+    p.innerText = `${username}: ${message}`;
+    chatContainer.appendChild(p);
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+}
+
+function sendMessage() {
+    const message = messageInput.value.trim();
+    const username = "{{ user }}"; 
+
+    if (message) {
+        fetch('/send_message', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: `username=${encodeURIComponent(username)}&message=${encodeURIComponent(message)}`
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                messageInput.value = '';
+            } else {
+                console.log('Error:', data.error);
+            }
+        })
+        .catch(error => {
+            console.log('Error:', error);
+        });
+    }
+}
+
+function getMessages() {
+    fetch('/get_messages')
+        .then(response => response.json())
+        .then(data => {
+            if (data.messages) {
+                chatContainer.innerHTML = '';
+                data.messages.forEach(message => {
+                    displayMessage(message.username, message.message);  // Pass the correct properties
+                });
+            }
+        })
+        .catch(error => {
+            console.log('Error:', error);
+        });
+}
+
+sendButton.addEventListener('click', sendMessage);
+setInterval(getMessages, 2000);
+</script>
+
+    </div>
+</body>
+</html>

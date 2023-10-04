@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ploopit Login</title>
+  <link rel="stylesheet" href="../static/css/misc.css">
+  <link rel="stylesheet" href="../static/css/auth.css">
+  <script src="../static/scripts/misc.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(https://cdn.discordapp.com/attachments/1114574418568552602/1119443665903964190/wave.gif);
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: rgb(1, 85, 104);
+      display: inline-block;
+  justify-content: center;
+  align-items: center;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.3);
+      opacity: 1;
+    }
+
+    .container h2 {
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .container input[type="username"],
+    .container input[type="password"] {
+      width: 92%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #0080ff;
+      color: white;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .container input[type="submit"]:hover {
+  transform: scale(1.1);
+  background-color: #0066cc;
+}
+
+
+    .guestlogin__text {
+      padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.24);
+    background-color: #0155d4;
+    width: 150px;
+
+    border-radius: 10px;
+    margin: 0 auto 10px;
+    color: #ffffff;
+    font-size: 18px;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+    }
+
+    .brtext{
+      font-size: 25px;
+      text-align: center;
+    font-family: Titan One, sans-serif;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(161, 161, 161));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+  .header__text {
+    font-size: 40px;
+    font-family: Titan One, sans-serif;
+    text-align: center;
+    font-family: Titan One, sans-serif;
+    color:rgb(17, 207, 221);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-decoration: none;
+        -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+
+  .guestlogin__text:hover {
+    transform: scale(0.1);
+    color: blue;
+  }
+  .ploopittext {
+    font-size: 30px;
+    margin: auto;
+    font-family: Titan One, sans-serif;
+    text-align: center;
+    font-family: Titan One, sans-serif;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(161, 161, 161));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-decoration: none;
+        -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+  .ploopittext:hover {
+    transform: scale(2.0);
+    color: blue;
+  }
+
+  .guestlogin__text:hover {
+    transform: scale(1.2);
+    color: blue;
+  }
+
+
+  .pagesbtn {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.24);
+    background-color: #0155d4;
+    width: 10px;
+    border-radius: 10px;
+    margin:auto;
+    color: #ffffff;
+    font-size: 18px;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .pagesbtn2 {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.24);
+    background-color: #0155d4;
+    width: 10px;
+    border-radius: 10px;
+    margin:auto;
+    color: #ffffff;
+    font-size: 18px;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .header {
+    background: linear-gradient(180deg, rgba(0,255,244,1) 0%, rgb(2, 119, 119) 100%);
+   color: #0bc2cf;
+   font-size: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    padding-bottom: 6px;
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-decoration: none;
+   
+  }
+  .errortext{
+    color: red;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+  }
+  </style>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <script type = "text/javascript" language = "javascript">
+window.onload = conslelogs()
+      $("document").ready(function(){
+        $("#hide").click(function() {
+          var isHidden = $(".header").is(":hidden");
+          if (isHidden) {
+            $('.header').slideDown();
+          } else {
+            $('.header').slideUp();
+          }
+        });        
+      });
+    </script>
+</head>
+<body  style="background: linear-gradient(180deg, rgba(0,255,244,1) 0%, rgba(10,2,119,1) 100%);">
+  <div id="target" class = "header">
+    <a href="/" class="ploopittext">Ploopit</a>
+    <a href="https://discord.gg/NE6QmyPPJa" class="ploopittext">Discord</a>
+    <a href="/stats" class="ploopittext">Stats</a>
+  </div>
+  <div class="container">
+    <h2 class="header__text">Change password</h2>
+    <form action="/resetpass" method="post">
+    <div>
+    <input type="username" autocomplete="username" placeholder="username" name="username" value="">
+    <br>
+    <input type="password" autocomplete="password" placeholder="new password" name="password" value="">
+    <br>
+    <input type="password" autocomplete="password" placeholder="old password" name="password" value="">
+    <br>
+    <input type="submit" tabindex="0" value="Login">
+    </div>
+          <div class="errortext">{{ msg }}</div>
+    </form>
+  </div>
+</body>
+</html>
+

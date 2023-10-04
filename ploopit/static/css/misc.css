@@ -1,0 +1,114 @@
+
+@when media (max-width : 320px) {
+    /*THIS IS MOBILE OK*/
+}
+@else {
+    /*THIS IS DESKTOP OK*/
+}
+
+.navbar {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 38.52vh;
+    padding: 3.5vh 1.75vh 3.5vh 0;
+    box-sizing: border-box;
+    background-color: #005f7f;
+    box-shadow: inset -1.75vh 0 rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+}
+.newscontainer {
+    position: relative;
+    top: 210;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+}
+
+
+.newscontainer2 {
+    position: fixed;
+    bottom: -50;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+}
+.newsIcon {
+    margin-right: 15px;
+}
+
+.headerText {
+    font-family: Titan One, sans-serif;
+    font-size: 34px;
+    padding-bottom: 4px;
+    background: -webkit-linear-gradient(rgb(81, 0, 128), rgb(42, 4, 212));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.newsText {
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    margin: auto auto auto 8px;
+}
+
+.closeIcon {
+    font-size: 24px;
+    margin-left: auto;
+    outline: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    transition: 0.2s;
+}
+
+.closeIcon:hover {
+    transform: scale(0.9);
+}
+
+.postsContainer {
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    height: calc(100% - 85px);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #007481;
+}
+
+@media only screen and (max-width: 865px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+.cardContainer {
+    box-sizing: border-box;
+    width: 30%;
+    margin: 10px auto;
+    padding: 10px 15px 17px;
+    background-color: #015d6d;
+    box-shadow: inset 0 -7px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+    color: #4a0086;
+    font-family: Nunito, sans-serif;
+    color: #ffffff;
+}

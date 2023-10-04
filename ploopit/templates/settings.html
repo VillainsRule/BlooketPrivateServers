@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Settings</title>
+  <link rel="stylesheet" href="../static/css/misc.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+  <style>
+
+    .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.innercontainer {
+  height: 60%;
+  width: 300px;
+  background-color: aqua;
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border-radius: 5%;
+  margin-left: 5%;
+  box-shadow: 2px 5px rgb(35, 35, 35);
+}
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #039286;
+      color: #ffffff;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .success-message {
+      color: green;
+      margin-top: 10px;
+    }
+    .background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(-90deg, rgb(6, 0, 92), rgb(0, 83, 128), rgb(0, 0, 40), rgb(0, 40, 108));
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+ }
+
+ .wavesgif{
+    position: absolute;
+background-size: cover;
+width: 100%;
+height: 85%;
+top: 50%;
+ }
+ @media (prefers-reduced-motion: no-preference) {
+ #horBar a {
+    animation: move-bg 8s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.innercontainer {
+height: 60%;
+width: 300px;
+background-color: aqua;
+padding: 10px;
+margin-top: 10px;
+box-sizing: border-box;
+border-radius: 5%;
+box-shadow: 2px 5px rgb(35, 35, 35);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-90deg, rgb(6, 0, 92), rgb(0, 83, 128), rgb(0, 0, 40), rgb(0, 40, 108));
+  background-size: 400% 400%;
+  animation: animate 15s ease infinite;
+}
+
+.container {
+  height: 60%;
+  width: 800px;
+  background-color: #039286;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 5px rgb(35, 35, 35);
+align-self: center;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: auto;
+margin-top: auto;
+}
+
+.settext{
+font-size: 22px;
+font-family: 'Nunito', sans-serif;
+color: rgb(0, 76, 82);
+margin-left: auto;
+}
+
+h2, h3{
+  font-size: 25px;
+font-family: 'Titan One', sans-serif;
+color: rgb(0, 0, 0);
+}
+
+h1{
+  font-size: 35px;
+font-family: 'Titan One', sans-serif;
+color: rgb(255, 255, 255);
+}
+
+.settext2{
+font-size: 22px;
+font-family: 'Nunito', sans-serif;
+color: rgb(0, 76, 82);
+margin-left: auto;
+-webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.settext2:hover{
+    transform: scale(2.0);
+    color: blue;
+}
+
+a:link { text-decoration: none; 
+color: rgb(0, 76, 82);
+}
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+.backarrow {
+height: 20%;
+width: 10px;
+}
+
+.btn{
+background-color: #008116;
+ background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 0.1) 50%, transparent 55%),-webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), transparent);
+ border-radius: 6px;
+ box-shadow: 0 0 0 1px #004d13 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 4px 0 0      #003d0d,0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+ color: rgb(255, 255, 255) !important; 
+ display: block;
+ font-family:  'Titan One' , sans-serif ;
+ font-size: 15px;
+ height: 40px;
+ letter-spacing: -1px;
+ line-height: 50px;
+ font-weight: 200;
+ margin-bottom: 10px;
+ cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-decoration: none;
+ position: relative;
+ align-self: center;
+ text-align: center;
+ text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+ text-decoration: none !important;
+ -webkit-transition: all .2s linear;
+ margin-left: 10px;
+ width: 146px;
+ transition: 0.3s;
+}
+
+ .btn:hover {
+ background-color: #00ff00;
+ position: relative;
+ transform:translateY(-4px);
+transform: cubic-bezier(.3,.7,.4,1);
+color: black !important;
+ box-shadow: 0 0 0 1px #0b8100 inset,0 0 0 2px rgba(0, 47, 100, 0.15) inset,0 5px 0 0      #007419,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+ }
+
+ .sidebar::-webkit-scrollbar {
+    display: none;
+  }
+#logoText{
+ font-family: titan one;
+ color: white;
+ font-size: 6vh;
+ text-shadow: 0 0 4vh #09001a;
+ text-decoration: none;
+ -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-decoration: none;
+  text-align: center;
+}
+#mainText{
+    font-family: nunito ;
+    color:white;
+    font-size: 4vh;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  bottom: 0%;
+}
+#mainText a {
+  color: white !important;
+  text-decoration: none;
+  -webkit-user-drag: none;
+}
+.sidebarLink{
+    font-family: 'Titan One';
+    padding: 1vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 6vh;
+    width: 29vh;
+    margin: .6vh 0;
+    cursor: pointer;
+    font-weight: normal;
+    text-decoration: none;
+    -webkit-user-drag: none;
+    transition: 0.5s;
+}
+.sidebarLink:hover,
+.sidebarLink:active
+ {
+  background-color: rgb(0, 145, 170);
+  color:rgb(0, 0, 0);
+}
+  </style>
+   <script src="../static/scripts/misc.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <a id="logoText" href="/">Ploopit</a><br><br><br>
+    <div id="mainText">
+        <a class="menuItem" href="/stats">
+            <div class="sidebarLink menuText">Stats</div>
+        </a>
+        <a class="menuItem" href="/market">
+            <div class="sidebarLink menuText">Market</div>
+        </a>
+        <a class="menuItem" href="/blooks">
+            <div class="sidebarLink menuText">Blooks</div>
+        </a>
+   {% if session.role == "Admin" %}
+  <a class="menuItem" href="/admin">
+   <div class="sidebarLink menuText">Admin panel</div>
+   </a>
+   {% endif %}
+        <a class="menuItem">
+          <div class="sidebarLink menuText">Settings</div>
+        </a>
+    </div>
+</div>
+  <div class="container">
+    <h1 class="ploopittext">Site Settings</h1>
+    <div class="innercontainer">
+    <h2>User Info</h2>
+    <div class="settext">
+        Joined: {{ date }}
+    </div>
+    <div class="settext">
+        User: {{ user }}
+    </div>
+    <div class="settext">
+      Role: {{ role }}
+    </div>
+    </div>
+    
+    <div class="innercontainer" >
+      <h3>Change Info</h3>
+        <a href="/changeuser" class="settext2">Change User</a>
+        <br>
+        <a href="/changepss" class="settext2">Change password</a>
+        <br>
+        <a href="/contact"class="settext2">Contact Us</a>
+        <br>
+        <a href="/changepic"class="settext2">Change Profile Pic</a>
+    </div>
+  </div>
+</body>
+</html>
