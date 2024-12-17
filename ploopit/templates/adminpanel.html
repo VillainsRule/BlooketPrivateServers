@@ -1,0 +1,647 @@
+<head>
+    <script src="https://kit.fontawesome.com/fff095bf0b.js" crossorigin="anonymous"></script>
+    <title>Ploopit Stats</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="../static/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon-16x16.png">
+    <link rel="manifest" href="../static/images/site.webmanifest">
+    <link rel="mask-icon" href="../static/images/safari-pinned-tab.svg" color="#5bbad5">
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+          <script src="https://kit.fontawesome.com/fff095bf0b.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="../static/css/misc.css" />
+      <link rel="stylesheet" href="../static/css/404.css" />
+            <script src="../static/scripts/stats.js" defer type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+      <script src="../static/scripts/game.js" defer type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+      <script src="../static/scripts/all.js" defer type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+      <script src="../static/scripts/jquery.js" type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+      <meta name="keywords"
+          content="ploopit, Ploopit, ploopit private server">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titan+One">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans&fam">
+          <meta name="google-site-verification" content="GV05APRuFawzXQj3V55HcQ4XRfkZQ4_yqYPH4UbG3HA" />
+          <script src="../static/scripts/loading.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+          <style>
+                 ol,
+ul {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* Styles for larger screens */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles for smaller screens */
+
+  .innercontainer {
+    width: 100%;
+  }
+
+  #horBar {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #horBar li {
+    width: auto;
+    margin: 5px;
+  }
+
+
+ol,
+ul {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Styles for larger screens */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+  #horBar {
+    margin: 11px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #horBar li {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    color: rgb(3, 116, 116);
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+@media screen and (max-width: 600px) {
+  #horBar {
+    margin: 11px;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #horBar li {
+    font-size: 22px;
+  display: flex;
+  align-items: center;
+  color: rgb(3, 116, 116);
+  width: 100px;
+  float: left;
+   transform: translate(400px, -50%);
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+
+.styles__inputContainer___t9pz0-ploopCase {
+    border-radius: 6px;
+    max-width: 330px;
+    width: 80%;
+    height: 45px;
+    margin: auto auto 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+#horBar {
+  margin: 11px;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+#horBar li {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  color: rgb(3, 116, 116);
+  width: 100px;
+  float: left;
+   transform: translate(400px, -50%);
+}
+
+#horBar button {
+    font-family: 'Titan One', sans-serif;
+  color: #006;
+  text-decoration: none;
+  padding: 4px;
+  display: block;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#horBar a {
+  --bg-size: 400%;
+  --color-one: hsl(184, 100%, 33%);
+  --color-two: hsl(165, 100%, 20%);
+  font-size: 22px;
+  font-family: 'Titan One', sans-serif;
+  background: linear-gradient(
+                90deg,
+                var(--color-one),
+                var(--color-two),
+                var(--color-one)
+              ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move-bg 8s infinite linear;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.5s;
+    align-self: center;
+}
+#horBar a:hover {
+    background: -webkit-linear-gradient(#012277, #004599);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button3D {
+ background-color: #005281;
+ background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 0.1) 50%, transparent 55%),-webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), transparent);
+ border-radius: 6px;
+ box-shadow: 0 0 0 1px #163772 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 4px 0 0      #333797,0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+ color: white !important;
+ display: block;
+ font-family: "Titan One", sans-serif;
+ font-size: 20px;
+ height: 40px;
+ letter-spacing: -1px;
+ line-height: 50px;
+ margin-bottom: 10px;
+ cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-decoration: none;
+ position: relative;
+ align-self: center;
+ text-align: center;
+ text-decoration: none !important;
+ -webkit-transition: all .2s linear;
+ margin-left: 10px;
+ width: 146px;
+ }
+
+ .button3D:active {
+ background-color: #000783;
+ top: 4px;
+ box-shadow: 0 0 0 1px #004c76 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0      #333797,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
+ }
+
+ .button3D:hover {
+ background-color: #003656;
+ position: relative;
+ top: -5px;
+ box-shadow: 0 0 0 1px #004048 inset,0 0 0 2px rgba(0, 47, 100, 0.15) inset,0 5px 0 0      #003757,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+ }
+
+ .ploopittext{
+    font-size: 40px;
+    font-family: Titan One, sans-serif;
+    text-decoration: none;
+    font-size: 42px;
+    background: -webkit-linear-gradient(#00ffd5, #0097c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 1px 5px black);
+    margin-bottom: 20px;
+    margin: center;
+    text-align: center;
+    transition: 0.5s;
+ }
+
+ .background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(-90deg, rgb(6, 0, 92), rgb(0, 83, 128), rgb(0, 0, 40), rgb(0, 40, 108));
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+ }
+
+ .wavesgif{
+    position: absolute;
+background-size: cover;
+width: 100%;
+height: 85%;
+top: 50%;
+ }
+ @media (prefers-reduced-motion: no-preference) {
+ #horBar a {
+    animation: move-bg 8s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.userinfocontainer{
+    position: relative;
+    display: block;
+justify-content: center;
+    font-size:28px;
+    color:#fff;
+    text-align:center;
+    line-height:49px;
+    padding:20px;
+    align-items: center;
+    font-family:'Titan One',sans-serif;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none
+}
+
+.Plooppfp{
+display: block;
+margin-left: auto;
+margin-right: auto;
+  width: 100px;
+  margin-bottom: 10px;
+    filter:drop-shadow(0 10px rgba(0,0,0,.2));
+    cursor:pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+}
+.container input[type="username"],
+    .container input[type="password"] {
+      width: 92%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+.banner{
+   display: block;
+margin-left: auto;
+margin-right: auto;
+  width: 290px;
+  height: 62px;
+  margin-bottom: 10px;
+  justify-content: center;
+    filter:drop-shadow(0 10px rgba(0,0,0,.2));
+    cursor:pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+}
+
+.headerbuttons{
+width: 40%;
+height: 15%;
+display: flex;
+overflow: hidden;
+margin-left: auto;
+margin-right: auto;
+font-family: 'Titan One', sans-serif;
+margin-bottom: 5px;
+}
+
+.header3Dbtn{
+background-color: #005281;
+ background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 0.1) 50%, transparent 55%),-webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), transparent);
+ border-radius: 6px;
+ box-shadow: 0 0 0 1px #163772 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 4px 0 0      #333797,0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+ color: rgb(255, 255, 255) ;
+ display: block;
+ font-family:  Nunito , sans-serif ;
+ font-weight: 100;
+ font-size: 15px;
+ height: 40px;
+ letter-spacing: -1px;
+ line-height: 50px;
+ font-weight: 200;
+ margin-bottom: 10px;
+ cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-decoration: none;
+ position: relative;
+ align-self: center;
+ text-align: center;
+ text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+ text-decoration: none !important;
+ -webkit-transition: all .2s linear;
+ margin-left: 10px;
+ width: 146px;
+ transition: 0.2s;
+}
+
+.header3Dbtn:active {
+ background-color: #000783;
+ top: 4px;
+ box-shadow: 0 0 0 1px #004c76 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0      #333797,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
+ }
+
+ .header3Dbtn:hover {
+ background-color: #003656;
+ position: relative;
+ transform:translateY(-4px);
+transform: cubic-bezier(.3,.7,.4,1);
+ box-shadow: 0 0 0 1px #004048 inset,0 0 0 2px rgba(0, 47, 100, 0.15) inset,0 5px 0 0      #003757,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+ }
+
+ 
+ .statscontainer {
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5%;
+}
+
+    .container {
+        display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+      background-color: rgb(1, 85, 104);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(36, 36, 36, 0.733);
+      opacity: 1;
+    }
+
+    .container h2 {
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .inputcontainer {
+      width: 92%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .submitbtn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #0080ff;
+      color: white;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .container input[type="submit"]:hover {
+  transform: scale(1.1);
+  background-color: #0066cc;
+}
+
+
+    .guestlogin__text {
+      padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.24);
+    background-color: #0155d4;
+    width: 150px;
+
+    border-radius: 10px;
+    margin: 0 auto 10px;
+    color: #ffffff;
+    font-size: 18px;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+    }
+
+    .brtext{
+      font-size: 25px;
+      text-align: center;
+    font-family: Titan One, sans-serif;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(161, 161, 161));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+  .header__text {
+    font-size: 40px;
+    font-family: Titan One, sans-serif;
+    text-align: center;
+    font-family: Titan One, sans-serif;
+    color:rgb(17, 207, 221);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-decoration: none;
+        -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+
+  .guestlogin__text:hover {
+    transform: scale(0.1);
+    color: blue;
+  }
+  .ploopittext {
+    font-size: 30px;
+    margin: auto;
+    font-family: Titan One, sans-serif;
+    text-align: center;
+    font-family: Titan One, sans-serif;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(161, 161, 161));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-decoration: none;
+        -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+  .ploopittext:hover {
+    transform: scale(2.0);
+    color: blue;
+  }
+
+  .errortext{
+    color: red;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+  }
+          </style>
+           <script src="../static/scripts/misc.js"></script>
+          <script>
+   $("document").ready(function(){
+        $("#hide").click(function() {
+          var isHidden = $(".navbar").is(":hidden");
+          if (isHidden) {
+            $('.navbar').slideDown();
+          } else {
+            $('.navbar').slideUp();
+          }
+        });        
+      });    
+$("document").ready(function(){
+      $("#show").click(function() {
+          var isShow = $(".navbar").is(":hidden");
+          if (isShow) {
+            $('.navbar').slideDown();
+          } else {
+            $('.navbar').slideUp();
+          }
+        });
+    });
+
+    $("document").ready(function(){
+      $("#news1").click(function() {
+          var isHidden2 = $(".newscontainer").is(":hidden");
+          if (isHidden2) {
+            $('.newscontainer').slideDown();
+          } else {
+            $('.newscontainer').slideUp();
+          }
+        });
+    });
+
+    $("document").ready(function(){
+      $("#closenews").click(function() {
+          var isHidden2 = $(".newscontainer").is(":hidden");
+          if (isHidden2) {
+            $('.newscontainer').slideDown("300");
+          } else {
+            $('.newscontainer').slideUp();
+          }
+        });
+    });
+    window.onload = Closeform()
+function Openform(){
+    //alert("INSIDE OPENFORM FUNCTION")
+    document.getElementById('buy').style.visibility = 'visible';
+};
+
+function claimButton() {
+    var bubbles = 0;
+    document.getElementById("bubblestat").innerHTML = bubbles;
+    bubbles += 900; 
+    document.getElementById("bubblestat").innerHTML = bubbles;
+
+    if (bubbles > 9999999) {
+        bubbles = "banned";
+        document.getElementById("bubblestat").innerHTML = bubbles;
+    }
+}
+
+
+          </script>
+          <script>
+            window.onload = ploopimg()
+                function ploopimg() {
+var testimg = "../static/images/ploopit.svg"
+document.getElementById("imageploop").innerHTML = testimg;
+    }
+
+    function banner() {
+var banner = "https://cdn.discordapp.com/attachments/1116888171502895305/1125132764514103446/Default-banner_1.png"
+document.getElementById("banner").innerHTML = banner
+    }
+    </script>
+    </head>
+    <body>
+<main>
+    <!-- Here, we are using the 'nav' tag to provide navigation links, 
+      either within the current document or to other documents. -->
+    <nav>
+      <!-- We have used a list tag that is 'ul' to list the items-->
+      <div class="navbar">
+        <a href="/" class="ploopitText">Ploopit</a>
+      <ul id="horBar">
+        <li><a href="/stats">Stats</a></li>
+        <li><a href="/market">Market</a></li>
+        <li><a href="">Discord</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a onclick="opacity1()" id="news1">News</a></li>
+        <li><a href="/settings">Settings</a></li>
+        <li><a id="hide">hide</a></li>
+      </ul>
+      <a href="/play" class="button3D" style="float: left;"><i class="fas fa-play" style="margin-left: 10px;" aria-hidden="true"></i>Game!</a>
+      <a href="/logout" class="button3D" style="float: left; background: #03a0bc; background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 0.1) 50%, transparent 55%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), transparent);"><i class="fas fa-door-open" style="margin-left: 10px" aria-hidden="true"></i>logout</a>      
+  </main>
+<div class="background">
+<div class="wavesgif" style="background-image: url('https://cdn.discordapp.com/attachments/1114574418568552602/1119443665903964190/wave.gif');">
+</div>
+<div class="userinfocontainer">
+    <img class="plooppfp" src="../static/images/apple-touch-icon.png">
+    <div class="banner" style="background-image: url(../static/images/Default\ banner.svg);background-size: cover;" id="banner">{{ user }}</div>
+    <text>{{role}}</text>
+    </div>
+<div class="panel">
+<div class="things">
+  <a href="/banuser">Ban user</a>
+</div>
+
+</div>  
+</div>
+</body>

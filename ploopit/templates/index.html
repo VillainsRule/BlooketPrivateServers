@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" translate="yes">
+
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="../static/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon-16x16.png">
+<link rel="manifest" href="../static/images/site.webmanifest">
+<link rel="mask-icon" href="../static/images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Ploopit</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+
+  <!-- font wesome stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="../static/css/responsive.css" rel="stylesheet" />
+  <script src="../static/scripts/jquery-3.4.1.min.js"></script>
+  <script src="../static/scripts/bootstrap.js"></script>
+  <script src="../static/scripts/audio pronounce.js"></script>
+  <script src="../static/scripts/misc.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+  <style> body {
+    background-color: aqua;
+    font-family: 'Titan One', sans-serif;
+    background-size: 5908px;
+    overflow: hidden;
+  } </style>
+</head>
+<audio src="../static/audio/theme.mp3"></audio>
+<script>
+  window.onload = conslelogs()
+  window.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("audio");
+  audio.volume = 0.5;
+  audio.play();
+  });
+</script> 
+<body>
+  
+  <div class="hero_area">
+        <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand mr-5" href="/">
+            <img src="../static/images/android-chrome-192x192.png" alt="">
+            <span>
+              Ploopit
+            </span>
+            <br>
+            <br>
+          <div style="color: black;">
+              BETA-0.5.2
+          </div>
+          </a>
+          <div onclick="sound();">
+           how to pronouce (ploop-it)
+           (click me)
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/login">Login<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/register">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://discord.gg/wyCrz6TZdw">Discord</a>
+                </li>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <div>
+                      <h1>
+                        Welcome To <br>
+                        <span>
+                       Ploopit
+                        </span>
+                      </h1>
+                      <p>
+                        The blooket like project with water involved. Hey thats new!
+                      </p>
+                      <div class="btn-box">
+                        <a href="/register" class="btn-1">
+                         Get started
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <div>
+                      <h1>
+                        Login To <br>
+                        <span>
+                          Ploopit
+                        </span>
+                      </h1>
+                      <p>
+                        hey or you can login if you are not new here!
+                      </p>
+                      <div class="btn-box">
+                        <a href="/login" class="btn-1">
+                           login
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+</body>
+ </html>

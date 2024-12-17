@@ -1,0 +1,274 @@
+<head>
+    <script src="https://kit.fontawesome.com/fff095bf0b.js" crossorigin="anonymous"></script>
+    <title>Ploopit Stats</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="../static/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon-16x16.png">
+    <link rel="manifest" href="../static/images/site.webmanifest">
+    <link rel="mask-icon" href="../static/images/safari-pinned-tab.svg" color="#5bbad5">
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+          <script src="https://kit.fontawesome.com/fff095bf0b.js" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="../static/css/game.css" />
+      <link rel="stylesheet" href="../static/css/misc.css" />
+      <link rel="stylesheet" href="../static/css/404.css" />
+            <script src="../static/scripts/stats.js" defer type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+      <script src="../static/scripts/game.js" defer type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+      <script src="../static/scripts/all.js" defer type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+      <script src="../static/scripts/jquery.js" type="a875bbfdd76718c9cb22f39a-text/javascript"></script>
+      <meta name="keywords"
+          content="ploopit, Ploopit, ploopit private server">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titan+One">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans&fam">
+          <meta name="google-site-verification" content="GV05APRuFawzXQj3V55HcQ4XRfkZQ4_yqYPH4UbG3HA" />
+          <script src="../static/scripts/loading.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+          <style>
+            .sidebar::-webkit-scrollbar {
+    display: none;
+  }
+#logoText{
+ font-family: titan one;
+ color: white;
+ font-size: 6vh;
+ text-shadow: 0 0 4vh #09001a;
+ text-decoration: none;
+ -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-decoration: none;
+  text-align: center;
+}
+#mainText{
+    font-family: nunito ;
+    color:white;
+    font-size: 4vh;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  bottom: 0%;
+}
+#mainText a {
+  color: white !important;
+  text-decoration: none;
+  -webkit-user-drag: none;
+}
+.sidebarLink{
+    font-family: 'Titan One';
+    padding: 1vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 6vh;
+    width: 29vh;
+    margin: .6vh 0;
+    cursor: pointer;
+    font-weight: normal;
+    text-decoration: none;
+    -webkit-user-drag: none;
+    transition: 0.5s;
+}
+.sidebarLink:hover,
+.sidebarLink:active
+ {
+  background-color: rgb(0, 145, 170);
+  color:rgb(0, 0, 0);
+}
+                 ol,
+ul {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.styles__inputContainer___t9pz0-ploopCase {
+    border-radius: 6px;
+    max-width: 330px;
+    width: 80%;
+    height: 45px;
+    margin: auto auto 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+#horBar {
+  margin: 11px;
+  width: 1000px;
+}
+#horBar li {
+  font-size: 22px;
+  display: block;
+  color: rgb(3, 116, 116);
+  width: 117px;
+  float: left;
+  transform: translate(400px, -50%);
+}
+
+#horBar button {
+    font-family: 'Titan One', sans-serif;
+  color: #006;
+  text-decoration: none;
+  padding: 4px;
+  display: block;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#horBar a {
+  font-family: 'Titan One', sans-serif;
+  color: #006;
+  text-decoration: none;
+  padding: 4px;
+  display: block;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#horBar a:hover {
+transform: scale(1.2);
+color: blue;
+}
+          </style>
+           <script src="../static/scripts/misc.js"></script>
+          <script>
+   $("document").ready(function(){
+        $("#hide").click(function() {
+          var isHidden = $(".navbar").is(":hidden");
+          if (isHidden) {
+            $('.navbar').slideDown();
+          } else {
+            $('.navbar').slideUp();
+          }
+        });        
+      });    
+$("document").ready(function(){
+      $("#show").click(function() {
+          var isShow = $(".navbar").is(":hidden");
+          if (isShow) {
+            $('.navbar').slideDown();
+          } else {
+            $('.navbar').slideUp();
+          }
+        });
+    });
+
+    $("document").ready(function(){
+      $("#news1").click(function() {
+          var isHidden2 = $(".newscontainer").is(":hidden");
+          if (isHidden2) {
+            $('.newscontainer').slideDown();
+          } else {
+            $('.newscontainer').slideUp();
+          }
+        });
+    });
+
+    $("document").ready(function(){
+      $("#closenews").click(function() {
+          var isHidden2 = $(".newscontainer").is(":hidden");
+          if (isHidden2) {
+            $('.newscontainer').slideDown("300");
+          } else {
+            $('.newscontainer').slideUp();
+          }
+        });
+    });
+    window.onload = Closeform()
+function Openform(){
+    //alert("INSIDE OPENFORM FUNCTION")
+    document.getElementById('buy').style.visibility = 'visible';
+};
+
+function codes1form(){
+    //alert("INSIDE OPENFORM FUNCTION")
+    document.getElementById('codes').style.visibility = 'hidden';
+    }
+    function codesform(){
+    //alert("INSIDE OPENFORM FUNCTION")
+    document.getElementById('codes').style.visibility = 'visible';
+};
+
+
+
+function Closeform() {
+    document.getElementById('buy').style.visibility = 'hidden';
+}
+
+function claimButton() {
+    var bubbles = 0;
+    document.getElementById("bubblestat").innerHTML = bubbles;
+    bubbles += 900;
+    document.getElementById("bubblestat").innerHTML = bubbles;
+
+    if (bubbles > 9999999) {
+        bubbles = "banned";
+        document.getElementById("bubblestat").innerHTML = bubbles;
+    }
+}
+
+
+          </script>
+          <script>
+            window.onload = ploopimg()
+                function ploopimg() {
+var testimg = "../static/images/ploopit.svg"
+document.getElementById("imageploop").innerHTML = testimg;
+    }
+          </script>
+          <style>
+            @keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  } 
+          </style>
+    </head>
+    
+    <body style="  z-index: 1;
+    background: linear-gradient(-45deg, rgb(12, 0, 148), green, rgb(0, 185, 166), rgb(0, 87, 124));
+    background-size: 400% 400%;
+    width: 100%;
+    height: 100vh;
+    font-size: 22px;
+color: red;
+text-align: center;
+align-items: center;
+    animation: animate 15s ease infinite; ">
+        
+
+      
+        <div id="loading-screen">
+                <img class="loading-icon"
+                    src=
+        "../static/images/ploopit.svg"
+                    alt="Ploopit Logo">
+          </div>
+          <div style="font-family: 'Titan One', sans-serif; font-size: 40px; color: rgb(0, 167, 209);">Ploopit</div>
+          <br>
+<img class="loader" src="../static/images/android-chrome-192x192.png">
+<p style="font-family: 'nunito', sans-serif; font-size: 55px;">
+  Hello this is saying that this page and others are being remade im not going to say why,
+  but ploopits date is now september 8th or earlier im sorry. 
+</p>
+          </body>
+         
